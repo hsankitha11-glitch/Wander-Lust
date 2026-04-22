@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.navbar-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+/* Hero */
+.hero{
+    height:400px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('../images/hero.png');
+    color:white;
+    text-align:center;
+    padding-top:120px;
+}
+
+.hero-title{
+    font-size:50px;
+}
+
+.hero-btn{
+    background:white;
+    padding:10px 20px;
+    border-radius:20px;
+    display:inline-block;
+    margin-top:15px;
+}
+
+/* Sections */
+.section-title{
+    text-align:center;
+    font-size:30px;
+}
+
+.section-lead{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* About */
+.about{
+    padding:30px;
+}
+
+.about-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+}
+
+.about img{
+    width:80%;
+}
+
+/* Services */
+.value{
+    background:#dcffa0;
+    padding:30px;
+}
+
+.value-flex{
+    display:flex;
+    gap:20px;
+    text-align:center;
+}
+
+.value-card img{
+    width:60px;
+}
+
+/* Destinations */
+.destinations{
+    padding:30px;
+}
+
+.destinations-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.grid-item img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Contact */
+.contact{
+    background:blue;
+    padding:30px;
+}
+
+.contact-card{
+    background:white;
+    padding:20px;
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    margin-bottom:10px;
+}
+
+/* Button */
+.btn-primary{
+    background:aqua;
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    color:white;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .about-layout{
+        grid-template-columns:1fr;
+    }
+
+    .value-flex{
+        flex-direction:column;
+    }
+
+    .destinations-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+    .destinations-grid{
+        grid-template-columns:1fr;
+    }
+}
