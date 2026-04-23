@@ -48,30 +48,6 @@ project-folder/
 2. Open the project folder  
 3. Open `index.html` in your browser  
 
----
-
-## 🌐 Live Demo
-
-(After enabling GitHub Pages, add your link here)
-
-```
-https://your-username.github.io/your-repo-name/
-```
-
----
-
-## 📸 Screenshots
-
-(Add screenshots of your website here if needed)
-
----
-
-## 📬 Contact
-
-For any queries or suggestions:  
-📧 Email: your-email@example.com  
-
----
 
 ## 📄 License
 
